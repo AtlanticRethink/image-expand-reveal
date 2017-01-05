@@ -1,0 +1,29 @@
+.wrap {
+    position: relative;
+    height: 100%;
+}
+
+.clip {
+    position: absolute;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    z-index: 1;
+}
+
+.c1 {
+    left: 0;
+    clip: rect(0px, 500px, 500px, 200px);
+}
+
+.clip:hover {
+    clip: rect(0, 750px, 500px, 0);
+    cursor: pointer;
+    z-index: 999;
+}
+
+#park-image {
+    height: 500px;
+}
